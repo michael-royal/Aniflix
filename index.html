@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube.com</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      
+  overflow-x: hidden;
+    }
+
+    body{
+     background-color: black;
+    }
+    header{
+      background-color: rgb(227, 225, 225);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+     display: grid;
+     padding: 2px;
+     grid-template-columns: 600px 800px 500px;
+     border-bottom: 3px lightgray solid;
+    }
+    .icons{
+      width: 30px;
+    }
+    .icon{
+      width: 170px;
+      margin-left: 80px;
+      margin-top: 23px;
+      display: inline;
+    }
+    .logo{
+      margin-top: 6px;
+      padding: 2px;
+      margin-left: 20px;
+      /* background-color: blue; */
+    }
+    .c{
+      
+      display: inline;
+      position: absolute;
+      margin-top: 35px;
+      margin-left: 20px;
+
+    }
+
+    .search{
+      /* background-color: blue; */
+      display: inline-flex;
+      align-items: center;
+    }
+    .see{
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .sea{
+      width: 500px;
+      padding: 15.1px;
+      font-size: 20px;
+      background-color: lightgray;
+      border: none;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+    @media (max-width: 1024px) {
+
+      .icon{
+      width: 100px;
+      margin-left: 30px;
+      margin-top: 10px;
+      display: inline;
+    }
+
+      header{
+      width: 105%;
+     display: flex;
+     justify-content: center;
+     padding: 2px;
+     border-bottom: 3px lightgray solid;
+    }
+      .sea{
+      width: 160px;
+      padding: 5px;
+      font-size: 15px;
+      background-color: lightgray;
+      border: none;
+        border-radius: 20px;
+    }
+    
+
+    .logo{
+      margin-top: 6px;
+      padding: 2px;
+      margin-left: 1px;
+      margin-right: 10px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .icons{
+      width: 20px;
+    }
+    .c{
+      
+      display: inline;
+      position: absolute;
+      margin-top: 10px;
+      margin-left: 5px;
+
+    }
+
+    .d{
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      background-color: lightgray;
+      display: none;
+
+}
+
+   
+.search{
+      padding: 5px;
+      height: 60px;
+      /* background-color: blue; */
+      display: inline-flex;
+      margin-left: -10px;
+      align-items: center;
+    }
+
+
+    .i{
+      width: 10px;
+    }
+    .it{
+      width: 20px;
+    }
+    .user{
+      width: 10px ;
+      height:10px;
+      border-radius: 50%;
+      text-align: center;
+      background-image:url(/portfolio/FB_IMG_16736241834287013.jpg) ;
+      background-size: contain;
+    }
+    .bar{
+      display: none;
+    }
+
+    .bar ul li {
+      margin: 5px;
+    }
+    .voice-search{
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+    
+    }
+
+    
+    .search{
+      padding: 10px;
+      /* background-color: blue; */
+      display: inline-flex;
+      align-items: center;
+    }
+    .d{
+
+      padding:17px;
+      border: none;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      background-color: lightgray;
+    }
+
+
+    .voice-search{
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+
+
+    .bar ul{
+      list-style: none;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bar ul li {
+      margin: 25px;
+    }
+    .i{
+      width: 60px;
+    }
+    .it{
+      width: 40px;
+    }
+    .user{
+      width: 35px ;
+      height:35px;
+      border-radius: 50%;
+      text-align: center;
+      background-image:url(/pics/us.jpg) ;
+      background-size: contain;
+    }
+    /* styling for the header stops here */
+/* styling for the side menu begins */
+.nav{
+  width: 30px;
+}
+.navi{
+  width: 15px;
+  margin-left: 7px;
+}
+.first1{
+  display: grid;
+  height: 150px;
+  margin-left: 10px;
+  padding: 10px;
+  border-bottom: solid lightgrey 3px;
+  overflow-y: hidden;
+}
+.inf{
+  color: black;
+  font-family: arial;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5px 7px 5px 15px;
+}
+
+.infi{
+  color: black;
+  font-family: arial;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 7px 7px 5px 22px;
+}
+.side li{
+  display: flex;
+  align-items: flex-start;
+  width: 200px;
+  margin: 10px 20px 20px 0px;
+}
+
+.side-menu{
+  width: 200px;
+  height: 100%;
+  margin-top: 120px;
+  float: left;
+  position: fixed;
+  margin-left: 0px;
+  border-right: solid 3px lightgray;
+  transition: 0.5s;
+  background-color: rgb(227, 225, 225);
+
+}
+.sidemenu{
+  margin-left: -1000px;
+  transition: 0.5s;
+}
+
+
+.naruto{
+  width: 25px;
+    height: 25px;
+    border-radius:50%;  
+    background-image: url('pics/naruto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.bc{
+  width: 25px;
+    height: 25px;
+    border-radius:50%;
+    background-image: url('pics/asta.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.ds{
+  width: 25px;
+    height: 25px;
+    border-radius:50%;  
+    background-image: url('pics/tanjiro.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 1024px) {
+  .side-menu{
+  width: 200px;
+  margin-top: 87px;
+  float: left;
+  margin-left: -1000px;
+  border-right: solid 3px lightgray;
+  transition: 1s;
+}
+.sidemenu{
+  margin-left: 0px;
+  transition: 1s;
+}
+
+}
+
+/* styli for the side menu ends here */
+/* styling for the section begins here */
+section{
+  /* background-color: blue; */
+  width: 87%;
+  /* height: 500px; */
+  padding: 5px;
+  margin: 150px 10px 10px -20px;
+  float: right;
+    /* background-color: red; */
+    display: flex;
+  /* text-align: center; */
+  justify-content: center;
+    flex-wrap: wrap;
+
+}
+.rate{
+  width: 100%;
+  height: 300px;
+}
+.scan{
+  background-size: cover;
+  background-image: url('/pics/eren.jpg');
+  border-radius: 20px;
+}
+.sca{
+  background-size: cover;
+  background-image: url('/pics/kill\ the\ newcomers.png');
+  border-radius: 20px;
+}
+.scap{
+  background-size: cover;
+  background-image: url('/pics/gathering.png');
+  border-radius: 20px;
+}
+.scanp{
+  background-size: cover;
+  background-image: url('/pics/blanks.png');
+  border-radius: 20px;
+}
+.scanpa{
+  background-size: cover;
+  background-image: url('/pics/permeation.png');
+  border-radius: 20px;
+}
+.scanpal{
+  background-size: cover;
+  background-image: url('/pics/burn.png');
+  border-radius: 20px;
+}
+.scam{
+  background-size: cover;
+  background-image: url('/pics/demonslayer.png');
+  border-radius: 20px;
+}
+.scal{
+  background-size: cover;
+  background-image: url('/pics/firstmissio.png');
+  border-radius: 20px;
+}
+.scank{
+  background-size: cover;
+  background-image: url('/pics/hellclassroom.png');
+  border-radius: 20px;
+}
+.scatch{
+  background-size: cover;
+  background-image: url('/pics/hSOTDep10.png');
+  border-radius: 20px;
+}
+.scum{
+  background-size: cover;
+  background-image: url('/pics/jjkep2.png');
+  border-radius: 20px;
+}
+.scale{
+  background-size: cover;
+  background-image: url('/pics/joblessep1.png');
+  border-radius: 20px;
+}
+.school{
+  background-size: cover;
+  background-image: url('/pics/tomanep1.png');
+  border-radius: 20px;
+}
+.skit{
+  background-size: cover;
+  background-image: url('/pics/spyfamilyep9.png');
+  border-radius: 20px;
+}
+.skit{
+
+  background-size: cover;
+  background-image: url('/pics/spyfamilyep9.png');
+  border-radius: 20px;
+}
+.skill{
+
+  background-size: cover;
+  background-image: url('/pics/dota.png');
+  border-radius: 20px;
+}
+
+/* this is where i repeat styles first */
+
+.scan2{
+  background-size: cover;
+  background-image: url('/pics/eren2season1ep18.png');
+  border-radius: 20px;
+}
+.sca2{
+  background-size: cover;
+  background-image: url('/pics/kill\ the\ newcomers.png');
+  border-radius: 20px;
+}
+.scap2{
+  background-size: cover;
+  background-image: url('/pics/gathering.png');
+  border-radius: 20px;
+}
+.scanp2{
+  background-size: cover;
+  background-image: url('/pics/blanks.png');
+  border-radius: 20px;
+}
+.scanpa2{
+  background-size: cover;
+  background-image: url('/pics/permeation.png');
+  border-radius: 20px;
+}
+.scanpal2{
+  background-size: cover;
+  background-image: url('/pics/burn.png');
+  border-radius: 20px;
+}
+.scam2{
+  background-size: cover;
+  background-image: url('/pics/demonslayer.png');
+  border-radius: 20px;
+}
+.scal2{
+  background-size: cover;
+  background-image: url('/pics/firstmissio.png');
+  border-radius: 20px;
+}
+.scank2{
+  background-size: cover;
+  background-image: url('/pics/hellclassroom.png');
+  border-radius: 20px;
+}
+.scatch2{
+  background-size: cover;
+  background-image: url('/pics/hSOTDep10.png');
+  border-radius: 20px;
+}
+.scum2{
+  background-size: cover;
+  background-image: url('/pics/jjkep2.png');
+  border-radius: 20px;
+}
+.scale2{
+  background-size: cover;
+  background-image: url('/pics/joblessep1.png');
+  border-radius: 20px;
+}
+.school2{
+  background-size: cover;
+  background-image: url('/pics/tomanep1.png');
+  border-radius: 20px;
+}
+.skit2{
+  background-size: cover;
+  background-image: url('/pics/spyfamilyep9.png');
+  border-radius: 20px;
+}
+.skit2{
+
+  background-size: cover;
+  background-image: url('/pics/spyfamilyep9.png');
+  border-radius: 20px;
+}
+.skill2{
+
+  background-size: cover;
+  background-image: url('/pics/dota.png');
+  border-radius: 20px;
+}
+
+/* this is where i repeat styles secondly */
+
+.scan3{
+  background-size: cover;
+  background-image: url('/pics/eren3season3ep12.png');
+  border-radius: 20px;
+}
+.sca3{
+  background-size: cover;
+  background-image: url('/pics/kill\ the\ newcomers.png');
+  border-radius: 20px;
+}
+.scap3{
+  background-size: cover;
+  background-image: url('/pics/gathering.png');
+  border-radius: 20px;
+}
+.scanp3{
+  background-size: cover;
+  background-image: url('/pics/blanks.png');
+  border-radius: 20px;
+}
+.scanpa3{
+  background-size: cover;
+  background-image: url('/pics/permeation.png');
+  border-radius: 20px;
+}
+.scanpal3{
+  background-size: cover;
+  background-image: url('/pics/burn.png');
+  border-radius: 20px;
+}
+.scam3{
+  background-size: cover;
+  background-image: url('/pics/demonslayer.png');
+  border-radius: 20px;
+}
+.scal3{
+  background-size: cover;
+  background-image: url('/pics/firstmissio.png');
+  border-radius: 20px;
+}
+.scank3{
+  background-size: cover;
+  background-image: url('/pics/hellclassroom.png');
+  border-radius: 20px;
+}
+.scatch3{
+  background-size: cover;
+  background-image: url('/pics/hSOTDep10.png');
+  border-radius: 20px;
+}
+.scum3{
+  background-size: cover;
+  background-image: url('/pics/jjkep2.png');
+  border-radius: 20px;
+}
+.scale3{
+  background-size: cover;
+  background-image: url('/pics/joblessep1.png');
+  border-radius: 20px;
+}
+.school3{
+  background-size: cover;
+  background-image: url('/pics/tomanep1.png');
+  border-radius: 20px;
+}
+.skit3{
+  background-size: cover;
+  background-image: url('/pics/spyfamilyep9.png');
+  border-radius: 20px;
+}
+.skit3{
+
+  background-size: cover;
+  background-image: url('/pics/spyfamilyep9.png');
+  border-radius: 20px;
+}
+.skill3{
+
+  background-size: cover;
+  background-image: url('/pics/dota.png');
+  border-radius: 20px;
+}
+.sip{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/icons/all.png');
+  background-position: center;
+}
+.cast{
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  margin: 10px 10px 10px -10px;
+  width: 400px;
+  /* background-color: blue; */
+  padding: 5px;
+}
+.p{
+  margin: 5px;
+}
+.p1{
+  font-size: 18px;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+}
+.p2{
+  font-size: 15px;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+}
+.p3{
+  font-size: 15px;
+  font-family: arial;
+  font-weight: bold;
+  color: blue;
+}
+.imga{
+  display: grid;
+  background-color: rgb(227, 225, 225);
+  padding: 15px;
+  width: 29%;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+@media (max-width:1024px) {
+  .imga{
+  display: grid;
+  background-color: rgb(227, 225, 225);
+  padding: 10px;
+  width: 310px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.rate{
+  width: 310px;
+  height: 200px;
+}
+
+section{
+  /* background-color: blue; */
+  width: 90%;
+  /* height: 500px; */
+  padding: 5px;
+  margin: 110px 10px 10px -20px;
+  float: right;
+    /* background-color: red; */
+    display: flex;
+  /* text-align: center; */
+  justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.sip{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/icons/all.png');
+  background-position: center;
+}
+
+.p1{
+  font-size: 15px;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+}
+.p2{
+  font-size: 10px;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+}
+.p3{
+  font-size: 10px;
+  font-family: arial;
+  font-weight: bold;
+  color: blue;
+}
+.cast{
+  display: grid;
+  grid-template-columns: 50px 0.8fr;
+  margin: 10px 10px 10px -10px;
+  width: 400px;
+  /* background-color: blue; */
+  padding: 5px;
+}
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img id="drop" class="icons c" src="/icons/pngwing.com (15).png" alt="">
+      <img class="icon" src="/icons/ANI.png" alt="">
+    </div>
+    <div class="search">
+      <form id="form" class="see" style="padding: 5pz;">
+        <input id="input" class="sea" type="search" placeholder="search">
+        <input type="submit"  class="ic d" value="&#128269">
+      </form>
+      <div class="voice-search"><img class="icons" src="/icons/pngwing.com (18).png" alt=""></div>
+    </div>
+    <div class="bar">
+      <ul>
+        <li><img class="i" src="/icons/pngwing.com (9).png" alt=""></li>
+        <li><img class="it" src="/icons/pngwing.com (17).png" alt=""></li>
+        <li class="user"></li>
+      </ul>
+    </div>
+  </header>
+
+  <aside id="side" class="side-menu">
+    <div class="first1">
+      <ul class="side">
+        <li>
+          <img class="nav" src="/icons/pngwing.com (14).png" alt="">
+          <a class="inf" href="#">Home</a>
+        </li>
+
+        <li>
+          <img class="navi" src="/icons/pngwing.com (22).png" alt="">
+          <a class="infi" href="#">Music</a>
+        </li>
+
+        <li>
+          <img class="nav" src="/icons/pngwing.com (21).png" alt="">
+          <a class="inf" href="#">Top Rated</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="first1">
+      <ul class="side">
+        <li>
+          <img class="nav" src="/icons/pngwing.com (13).png" alt="">
+          <a class="inf" href="#">History</a>
+        </li>
+
+        <li>
+          <img class="nav" src="/icons/pngwing.com (20).png" alt="">
+          <a class="inf" href="#">Library</a>
+        </li>
+
+        <li>
+          <img class="nav" src="/icons/pngwing.com (2).png" alt="">
+          <a class="inf" href="#">Updates</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="first1">
+      <ul class="side">
+        <li>
+          <img class="nav" src="/icons/pngwing.com (10).png" alt="">
+          <a class="inf" href="#">Settings</a>
+        </li>
+
+        <li>
+          <img class="nav" src="/icons/pngwing.com (25).png" alt="">
+          <a class="inf" href="#">Help</a>
+        </li>
+
+        <li>
+          <img class="nav" src="/icons/pngwing.com (27).png" alt="">
+          <a class="inf" href="#">Send FeedBack</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="first1">
+      <ul class="side">
+        <h3 style="font-weight:bold; font-size: 20px">Most Watched</h3>
+        <li>
+          <div class="naruto"></div>
+          <a class="inf" href="#">Naruto</a>
+        </li>
+
+        <li>
+          <div class="bc"></div>
+          <a class="inf" href="#">Black Clover</a>
+        </li>
+
+        <li>
+          <div class="ds"></div>
+          <a class="inf" href="#">Demon Slayer</a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+<section class="image-div">
+  <div id="imga" class="imga">
+      <div class="scan rate"></div>
+      <div class="cast">
+        <div class="sip"></div>
+        <div class="p">
+          <p class="p1">Eren infiltrates Marley (Attack On Titan season 4pt1 Ep:5;)</p>
+          <p class="p2">royalAnimes</p>
+          <p class="p3">1.4M views &#183; 5 months ago</p>
+        </div>
+      </div>
+  </div>
+
+  <div class="imga">
+    <div class="sca rate"></div>
+    <div class="cast">
+      <div class="sip"></div>
+      <div class="p">
+        <p class="p1">Kill the newcomers (Akame Ga Kill Ep:12;)</p>
+        <p class="p2">royalAnimes</p>
+        <p class="p3">1.4M views &#183; 5 months ago</p>
+      </div>
+    </div>
+</div>
+
+<div class="imga">
+  <div class="scap rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Gathering of Heroes (Hunter X Hunter Ep:41;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">2.5M views &#183; 9 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div class="imga">
+  <div class="scanp rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Blanks (My hero Academia season 4 Ep:12;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">3.4M views &#183; 1 year ago</p>
+    </div>
+  </div>
+</div>
+
+<div class="imga">
+  <div class="scanpa rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Permeation (Tokyo Ghoul season 2 Ep:7;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">300k views &#183; 8 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div id="imga" class="imga">
+  <div class="scanpal rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">For whom the flames burn (Fire Force season 1 Ep:14;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="imga" class="imga">
+  <div class="scam rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Demon Slayer (season 2 Ep:4;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div id="imga" class="imga">
+  <div class="scal rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Black Clover (Ep:1;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div id="imga" class="imga">
+  <div class="scank rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Hell is other people (Classroom of the Elite season 1 Ep:5;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div id="imga" class="imga">
+  <div class="scatch rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">High school of the dead (Ep:10;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div id="imga" class="imga">
+  <div class="scum rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Jujutsu Kaisen (season 1 Ep:2;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div id="imga" class="imga">
+  <div class="scale rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Rebirth (Jobless Reincarnation Ep:1;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div id="imga" class="imga">
+  <div class="school rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Tokyo Revengers (season 1 Ep:1;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div id="imga" class="imga">
+  <div class="skit rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Show off how in love you are (Spy X family season 1 Ep:9;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div id="imga" class="imga">
+  <div class="skill rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Dota Dragon (season 2 Ep:1;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1M views &#183; 3 months ago</p>
+    </div>
+  </div>
+</div>
+
+<!-- this is where i repeat stuffs first  -->
+
+<div id="imga" class="imga">
+  <div class="scan2 rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Beyond the walls (Attack On Titan season 1 Ep:18;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1.4M views &#183; 5 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div class="imga">
+<div class="sca2 rate"></div>
+<div class="cast">
+  <div class="sip"></div>
+  <div class="p">
+    <p class="p1">Kill the newcomers (Akame Ga Kill Ep:12;)</p>
+    <p class="p2">royalAnimes</p>
+    <p class="p3">1.4M views &#183; 5 months ago</p>
+  </div>
+</div>
+</div>
+
+<div class="imga">
+<div class="scap2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Gathering of Heroes (Hunter X Hunter Ep:41;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">2.5M views &#183; 9 months ago</p>
+</div>
+</div>
+</div>
+
+<div class="imga">
+<div class="scanp2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Blanks (My hero Academia season 4 Ep:12;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">3.4M views &#183; 1 year ago</p>
+</div>
+</div>
+</div>
+
+<div class="imga">
+<div class="scanpa2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Permeation (Tokyo Ghoul season 2 Ep:7;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">300k views &#183; 8 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scanpal2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">For whom the flames burn (Fire Force season 1 Ep:14;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+
+<div id="imga" class="imga">
+<div class="scam2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Demon Slayer (season 2 Ep:4;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scal2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Black Clover (Ep:1;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scank2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Hell is other people (Classroom of the Elite season 1 Ep:5;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scatch2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">High school of the dead (Ep:10;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scum2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Jujutsu Kaisen (season 1 Ep:2;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scale2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Rebirth (Jobless Reincarnation Ep:1;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="school2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Tokyo Revengers (season 1 Ep:1;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="skit2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Show off how in love you are (Spy X family season 1 Ep:9;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="skill2 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Dota Dragon (season 2 Ep:1;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<!-- this is where i repeat stuffs second -->
+
+
+<div id="imga" class="imga">
+  <div class="scan3 rate"></div>
+  <div class="cast">
+    <div class="sip"></div>
+    <div class="p">
+      <p class="p1">Eren infiltrates Marley (Attack On Titan season 4pt1 Ep:5;)</p>
+      <p class="p2">royalAnimes</p>
+      <p class="p3">1.4M views &#183; 5 months ago</p>
+    </div>
+  </div>
+</div>
+
+<div class="imga">
+<div class="sca3 rate"></div>
+<div class="cast">
+  <div class="sip"></div>
+  <div class="p">
+    <p class="p1">Kill the newcomers (Akame Ga Kill Ep:12;)</p>
+    <p class="p2">royalAnimes</p>
+    <p class="p3">1.4M views &#183; 5 months ago</p>
+  </div>
+</div>
+</div>
+
+<div class="imga">
+<div class="scap3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Gathering of Heroes (Hunter X Hunter Ep:41;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">2.5M views &#183; 9 months ago</p>
+</div>
+</div>
+</div>
+
+<div class="imga">
+<div class="scanp3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Blanks (My hero Academia season 4 Ep:12;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">3.4M views &#183; 1 year ago</p>
+</div>
+</div>
+</div>
+
+<div class="imga">
+<div class="scanpa3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Permeation (Tokyo Ghoul season 2 Ep:7;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">300k views &#183; 8 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scanpal3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">For whom the flames burn (Fire Force season 1 Ep:14;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+
+<div id="imga" class="imga">
+<div class="scam3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Demon Slayer (season 2 Ep:4;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scal3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Black Clover (Ep:1;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scank3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Hell is other people (Classroom of the Elite season 1 Ep:5;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scatch3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">High school of the dead (Ep:10;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scum3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Jujutsu Kaisen (season 1 Ep:2;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="scale3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Rebirth (Jobless Reincarnation Ep:1;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="school3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Tokyo Revengers (season 1 Ep:1;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="skit3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Show off how in love you are (Spy X family season 1 Ep:9;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+<div id="imga" class="imga">
+<div class="skill3 rate"></div>
+<div class="cast">
+<div class="sip"></div>
+<div class="p">
+  <p class="p1">Dota Dragon (season 2 Ep:1;)</p>
+  <p class="p2">royalAnimes</p>
+  <p class="p3">1M views &#183; 3 months ago</p>
+</div>
+</div>
+</div>
+
+
+<!-- where i repeated stuff 2 -->
+
+</section>
+
+
+
+
+
+
+<script>
+  var drop = document.getElementById('drop').addEventListener('click', ()=>{
+    var side = document.getElementById('side').classList.toggle('sidemenu')
+  })
+
+  var input = document.getElementById('form')
+  // console.log(input)
+  input.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    var riv = document.getElementById('input').value
+    // console.log(riv)
+    var low = riv.toUpperCase()
+    var imga = document.getElementsByClassName('imga')
+ Array.from(imga).forEach((list) =>{
+  if (list.textContent.toUpperCase().indexOf(low)== -1) {
+    list.style.display = 'none'
+    
+  }else{
+    list.style.display = 'block'
+
+
+  }
+ })
+//  console.log(list)
+  })
+
+</script>
+</body>
+</html>
